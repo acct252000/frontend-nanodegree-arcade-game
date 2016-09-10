@@ -1,8 +1,6 @@
 /* app.js
  * This file creates the characters of the game and governs their movement and collision logic, as well as keeping score.
  */
-
-
 //this section sets certain global variables needed throughout the game for easy update later.
 //range of enemy spends
 var maxEnemySpeed = 8;
@@ -133,6 +131,8 @@ Player.prototype.handleInput = function(keyPressed) {
             } else {
                 this.y += cellHeight;
             }
+            break;
+        default:
             break;
     }
 
